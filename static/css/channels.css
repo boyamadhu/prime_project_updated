@@ -1,0 +1,81 @@
+
+.container {
+    margin-top: 110px; /* Adjust as needed */
+    position: relative;
+    max-width: 100%; /* Adjust as needed */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 90%;
+    height: 500px;
+    padding-left: 200px;
+    display: block;
+}
+
+.content-overlay {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    transform: translateY(-50%);
+    width: 30%; /* Adjust as needed */
+    padding: 20px;
+    
+}
+
+.step-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.step-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #6a87a8; /* Circle background color */
+    color: #fff; /* Text color */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.step-line {
+    width: 2px;
+    height: 20px; /* Adjust as needed */
+    background-color: #4b4d50; /* Line color */
+    margin: 0 15px; /* Adjust as needed */
+}
+.btn {
+        width: 70%; /* Make the button full width */
+    }
+@media only screen and (max-width: 768px) {
+    .content-overlay {
+        width: 80%;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .content-overlay {
+        width: 90%;
+        left: 5%;
+    }
+    .step-container {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 5px;
+    }
+    .step-circle {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .step-line {
+        display: none;
+    }
+}

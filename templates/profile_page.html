@@ -1,0 +1,78 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+<title>Nothing</title>
+{% endblock %}
+
+{% block body_block %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 200px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: -15px;
+            margin-left: 300px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 200px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-picture:hover {
+            transform: scale(1.05);
+        }
+        .profile-info {
+            margin-left: 200px;
+            padding-top: 20px;
+        }
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ff5733; /* Orange color */
+            transition: color 0.3s ease-in-out;
+        }
+        .profile-info:hover .profile-name {
+            color: #e74c3c; /* Red color on hover */
+        }
+        .profile-details {
+            font-size: 18px;
+            color: #0a0a0a;
+            transition: color 0.3s ease-in-out;
+        }
+        .profile-info:hover .profile-details {
+            color: #34495e; /* Dark blue color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ PO.profile_pic.url }}" alt="Profile Picture" class="profile-picture">
+        <div class="profile-info">
+            <div class="profile-name">{{ PO.username }}</div>
+            <div class="profile-details">Address : {{ UO.email }}</div>
+            <div class="profile-details">Subscription : {{ PO.subscription }}</div>
+            {% if request.user.is_superuser %}
+            <div><a href="{% url 'add_movie' %}" class="btn btn-success">Add Movie</a></div>
+            {% else %}
+            <h1>{{request.user.is_superuser}}</h1>
+            {% endif %}
+
+           
+        </div>
+    </div>
+</body>
+</html>
+
+{% endblock %}

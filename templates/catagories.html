@@ -1,0 +1,49 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+<title>Nothing</title>
+{% endblock %}
+
+{% block body_block %}
+
+<div class="xx">
+    <h1></h1><br>
+    <h1 style="color: white;">Catogories</h1>
+    <h2 style="color: orange;">Genres</h2>
+    <div class="zz"  >
+        <div class="image-wrapper">
+        <a href=""><img src="{% static 'images/anime1.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/action.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/comedy.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/documentary.jpg' %}"></a>
+        <a href="{% url 'drama_movies' %}"><img src="{% static 'images/drama.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/fantasy.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/horror.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/international.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/kids.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/music.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/mystery.jpg' %}"></a>
+        <a href=""><img src="{% static 'images/romancek.jpg' %}"></a>
+    </div><br><br>
+    <h2 style="color: orange;">Featured collections</h2>
+    <div class="zz">
+      <div class="image">
+      <a href=""><img src="{% static 'images/telugu.jpg' %}"></a>
+      <a href=""><img src="{% static 'images/english.jpg' %}"></a>
+      <a href=""><img src="{% static 'images/hindi.jpg' %}"></a>
+      <a href=""><img src="{% static 'images/tamil.jpg' %}"></a>
+      <a href=""><img src="{% static 'images/malayalam.jpg' %}"></a>
+      <a href=""><img src="{% static 'images/kannada.jpg' %}"></a>
+      <a href=""><img src="{% static 'images/marathi.jpg' %}"></a>
+      <a href=""><img src="{% static 'images/punjabi.jpg' %}"></a>
+      <a href=""><img src="{% static 'images/gujarati.jpg' %}"></a>
+      <a href=""><img src="{% static 'images/bengali.jpg' %}"></a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+<link rel="stylesheet" type="text/css" href="{% static 'css/catagories.css' %}">
+
+{% endblock %}

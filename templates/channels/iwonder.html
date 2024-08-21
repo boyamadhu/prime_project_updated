@@ -1,0 +1,33 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+<title>Nothing</title>
+{% endblock %}
+
+{% block body_block %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/channels.css' %}">
+
+<div class="container">
+    <div class="image-container">
+        <img src="{% static 'images/channels/iwonder.jpeg' %}" alt="Image Description">
+        <div class="content-overlay">
+            <h3>Get Started</h3>
+            <p>Prime Video Channels is available for purchase only to Prime plan members.</p>
+            <div class="step-container">
+                <div class="step-circle">1</div>
+                <p>Step 1: Sign up / Upgrade to Prime plan</p>
+            </div>
+            <div class="step-line"></div>
+            <div class="step-container">
+                <div class="step-circle">2</div>
+                <p>Step 2: IWONDER Play sign up</p>
+            </div><br><br>
+            
+            <button type="button" class="btn btn-lg btn-primary">Continue</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,320 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+<title>Movie Page</title>
+{% endblock %}
+
+{% block body_block %}
+
+<div class="container">
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ul>
+      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="">
+            <img src="{% static 'images/openheimer.jpeg' %}" alt="Slide 1" class="d-block w-100" height="600px" >
+          </a>
+          <div class="movie-info">
+            <h1>OPPENHEIMER</h1>
+            <p>Available for rent</p>
+            <a href="#" class="btn btn-more-details">More Details</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="">
+            <img src="{% static 'images/aquaman.jpeg' %}" alt="Slide 2" class="d-block w-100" height="600px">
+          </a>
+          <div class="movie-info">
+            <h1>AQUAMAN</h1>
+            <p>Available for rent</p>
+            <a href="#" class="btn btn-more-details">More Details</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="">
+            <img src="{% static 'images/dune.jpeg' %}" alt="Slide 3" class="d-block w-100" height="600px">
+          </a>
+          <div class="movie-info">
+            <h1>DUNE II</h1>
+            <p>Available for rent</p>
+            <a href="#" class="btn btn-more-details">More Details</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <a href="">
+              <img src="{% static 'images/nun1.jpeg' %}" alt="Slide 3" class="d-block w-100" height="600px">
+            </a>
+            <div class="movie-info">
+                <h1>THE NUN II</h1>
+                <p>Available for rent</p>
+                <a href="#" class="btn btn-more-details">More Details</a>
+              </div>
+          </div>
+      </div>
+      
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  
+  <div class="a"><br><br><br><br><br><br>
+    <h2 style="color: orange;">Rent New movies</h2><br>
+    <div>
+        <a href=""><img src="{% static 'images/img/b1.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b2.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b3.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b4.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b5.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div><br><br>
+
+    <h2 style="color: orange;">Action and adventure movies</h2><br>
+    <div>
+      <a href=""><img src="{% static 'images/img/b6.jpg' %}"></a>
+      <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b7.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b8.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b9.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b10.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div><br><br>
+
+    <h2 style="color: orange;">Greatest War Movies</h2><br>
+    <div>
+      <a href=""><img src="{% static 'images/img/b20.jpg' %}"></a>
+      <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b21.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b22.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b23.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b24.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div><br><br>
+
+    <h2 style="color: orange;">Feel Good Rom-Com Movies</h2><br>
+    <div>
+      <a href=""><img src="{% static 'images/img/b25.jpg' %}"></a>
+      <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b26.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b27.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b28.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b29.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div><br><br>
+
+    <h2 style="color: orange;">All Time Classics</h2><br>
+    <div>
+      <a href=""><img src="{% static 'images/img/b30.jpg' %}"></a>
+      <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b31.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/b32.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/i.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/a24.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div><br><br>
+
+    <h2 style="color: orange;">Swinging '70s</h2><br>
+    <div>
+      <a href=""><img src="{% static 'images/img/a18.jpg' %}"></a>
+      <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/a15.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/a11.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/a12.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/a13.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div><br><br>
+
+    <h2 style="color: orange;">In the spotlight</h2><br>
+    <div>
+      <a href=""><img src="{% static 'images/img/a35.jpg' %}"></a>
+      <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/a.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/a44.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/a40.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div>
+    <div>
+        <a href=""><img src="{% static 'images/img/a38.jpg' %}"></a>
+        <h4><i class="fa-solid fa-bag-shopping"></i>  Rent</h4>
+    </div><br><br>
+</div>
+  
+<style>
+    .container {
+        width: 100%;
+        margin-top: 140px;
+        
+    }
+    .carousel-container {
+      width: 100%;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .carousel-inner {
+      width: 100%;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+    .movie-info {
+      margin-left: 150px ;
+      position: absolute;
+      top: 50%;
+      left: 10px; /* Adjust this value for spacing */
+      transform: translateY(-50%);
+      color: white;
+      z-index: 1;
+    }
+
+    .movie-info h1 {
+        color: yellow;
+      margin-bottom: 5px;
+    }
+
+    .btn-more-details {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-more-details:hover {
+      background-color: white;
+      color: black;
+    }
+    .a {
+          width: 90%;
+          margin-left: 7%;
+          
+    }
+    .a div {
+        display: inline-block;
+        width: 19%;
+        height: 13%;
+        
+    }
+    .a div img {
+        width: 80%;
+        height: 80%;
+        transition: all 0s linear 0s;
+    }
+    .a div img:hover {
+        transform: scale(1.2);
+    }
+    .a div h4 {
+        
+        color: white;
+    }
+    @media (max-width: 700px) {
+        .movie {
+        width: 100%; /* Display one movie per line on smaller screens */
+       }
+      .a div h4 {
+        font-size: 18px;
+        color: white;
+      }
+        .a h2 {
+        font-size: 27px;
+      } 
+    }
+    .fa-solid {
+      color: yellow;
+    }
+</style>
+
+
+{% endblock %}

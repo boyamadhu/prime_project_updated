@@ -1,0 +1,25 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+<title>Nothing</title>
+{% endblock %}
+
+{% block body_block %}
+
+<center>
+    <form method="POST" enctype="multipart/form-data">
+           
+            {% csrf_token %}
+            {{form.as_p}}
+
+            <input type="submit" value="submit"><br><br>
+    </form>
+</center>
+<style>
+    form{
+        margin-top: 130px;
+        background-color: aqua;
+    }
+</style>
+{% endblock %}

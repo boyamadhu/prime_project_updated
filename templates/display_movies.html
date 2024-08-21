@@ -1,0 +1,41 @@
+
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+<title>Nothing</title>
+{% endblock %}
+
+{% block body_block %}
+
+<div class="xx">
+    <h1></h1><br>
+    
+    <h2 style="color: orange;">Results for "{{movie_name}}"</h2>
+    <div class="zz"  >
+        <div class="image-wrapper">
+            {% for i in MO %}
+                <a href=""><img src="{{ i.image.url }}" alt=""></a>
+            {% endfor %}
+        </div>
+    </div><br><br>
+    <h2 style="color: orange;">Watch More</h2>
+    <div class="zz">
+        <div class="image">
+        <a href="#"><img src="{% static 'images/img/b30.jpg' %}"></a>
+        <a href="#"><img src="{% static 'images/img/b29.jpg' %}"></a>
+        <a href="#"><img src="{% static 'images/img/b28.jpg' %}"></a>
+        <a href="#"><img src="{% static 'images/img/b27.jpg' %}"></a>
+        <a href="#"><img src="{% static 'images/img/b26.jpg' %}"></a>
+        <a href="#"><img src="{% static 'images/img/b25.jpg' %}"></a>
+        <a href="#"><img src="{% static 'images/img/b24.jpg' %}"></a>
+        <a href="#"><img src="{% static 'images/img/b23.jpg' %}"></a>
+        <a href="#"><img src="{% static 'images/img/b22.jpg' %}"></a>
+        <a href="#"><img src="{% static 'images/img/b21.jpg' %}"></a>
+        </div>
+    </div>
+</div><br>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/catagories.css' %}">
+
+{% endblock %}
